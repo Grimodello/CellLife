@@ -14,7 +14,7 @@ max_hunger = 500  # Maximum hunger value of a cell
 hunger_decrease = 1  # Amount by which hunger decreases in each iteration
 lifespan_decrease = 1  # Amount by which lifespan decreases in each iteration
 hunger_replenish = 300  # Amount by which hunger is replenished when a cell eats food
-framerate = 60
+framerate = 30
 
 # Calculate the cell size and window size based on desired dimensions
 cell_size = 4
@@ -97,8 +97,8 @@ for i in range(food_spawn_amount):
 # Initialize Pygame
 pygame.init()
 pygame.display.set_caption('CellLife')
-icon = pygame.image.load('Background.png')
-pygame.display.set_icon(icon)
+#icon = pygame.image.load('Background.png')
+#pygame.display.set_icon(icon)
 screen = pygame.display.set_mode((window_width, window_height), pygame.RESIZABLE)
 clock = pygame.time.Clock()
 font = pygame.font.Font(None, 30)
